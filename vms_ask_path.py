@@ -9,10 +9,9 @@ other scripts to ask for paths or constants.
 
 
 #base_dir='/eog/scratch1/david/SkyTruth_VMS_2nd'
-psql_ip='35.188.118.231'
-psql_ip='104.155.141.214'
-psql_usr='postgres'
-psql_pwd='2ijillgl'
+psql_ip=
+psql_usr=
+psql_pwd=
 base_dir=os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 tmp_dir=os.path.join(base_dir,'working')
 test_db='dbname=postgres user='+psql_usr+' host='+psql_ip+' password='+psql_pwd
