@@ -1,8 +1,11 @@
 # vms_char_match
-  This repository contains a system that attempts to characterize VMS (Vessel Monitoring System) tracks, and match the record with VBD (VIIRS Boat Detection) data.
+
+This repository contains a system that attempts to characterize VMS (Vessel Monitoring System) tracks, and match the record with VBD (VIIRS Boat Detection) data.
 
 ##Methodology
-  The VMS tracks came in with following fields:
+
+The VMS tracks came in with following fields:
+
   Field|Comment
   -------------
   transmitter_no|The ID of the VMS equipment
