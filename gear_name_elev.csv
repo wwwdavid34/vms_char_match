@@ -1,0 +1,147 @@
+gear_type,name,min_elev,max_elev,avg_elev
+Bouke ami,Aru Island,-169,9,-43.8991011887504
+Bouke ami,Bintan Island,-83,0,-50.9412878787879
+Bouke ami,East Arafura Sea,-31,1,-12.7512787723785
+Bouke ami,East Java,-41,-6,-28.8227272727273
+Bouke ami,Java Sea,-130,944,-30.1601150527325
+Bouke ami,Riau Island,-80,85,-45.5745412844037
+Bouke ami,Subi Besar,-118,234,-56.7652137585295
+Bouke ami,West Java,-60,3,-23.5194077631052
+Bouke ami,West Java Sea,-43,0,-18.9164677804296
+Bouke ami,West Kalimantan,-77,1418,17.1475969889983
+Hand Line Tuna,Aru Island,-1942,9,-182.369992441421
+Hand Line Tuna,Buru Basin,-5635,126,-2744.13668850506
+Hand Line Tuna,East Arafura Sea,-36,15,-14.4068197164078
+Hand Line Tuna,Raja Ampat,-5202,19,-3561.27989260143
+Hand Line Tuna,Timor Sea,-3754,204,-1442.29878100759
+Huhate,Ambon,-4904,32,-3240.97250167673
+Huhate,Batjan Basin,-4193,2,-1541.00756620429
+Huhate,Bitung,-4803,1567,-1895.57349709712
+Huhate,Enggano Basin,-2315,-18,-1566.0856381889
+Huhate,Java Trench,-6354,1,-4796.76587089177
+Huhate,Malaku,-2735,-45,-1277.36054022314
+Huhate,Manado,-5961,1257,-3781.82135915823
+Huhate,Mentawai,-6504,3403,-2302.12885703266
+Huhate,Raja Ampat,-3521,828,-452.628962295629
+Jaring Insang oseanik,Arafura Sea,-3707,145,-218.451468942158
+Jaring Insang oseanik,Buli Bay,-1231,11,-309.373096446701
+Jaring Insang oseanik,Flores Savu Seas,-5063,222,-2514.1339317959
+Jaring Insang oseanik,Java Sea,-138,953,-32.2212176613489
+Jaring Insang oseanik,Makassar Strait,-72,-2,-39.3985559566787
+Jaring Insang oseanik,Manado,-5362,-418,-3695.34263618023
+Jaring Insang oseanik,Mentawai,-3146,199,-580.506319883325
+Jaring Insang oseanik,Natuna Sea,-118,811,-40.4134129289018
+Jaring Insang oseanik,Timor Sea,-3346,74,-972.823337302262
+Jaring liong bun,Arafura Sea North,-68,9,-29.7670096249585
+Jaring liong bun,Java Sea,-1335,1568,-26.5108574953732
+Jaring liong bun,Makassar Strait,-2113,9,-343.126686714473
+Jaring liong bun,Natuna Sea,-118,234,-47.0669337646107
+Pancing Ulur,Aru Island,-256,9,-52.4031539252657
+Pancing Ulur,East Arafura Sea,-33,-1,-15.5630478759272
+Pengangkut,Bali Sea,-1572,467,-852.450627054669
+Pengangkut,Banda Sea,-7356,1824,-3220.76643856795
+Pengangkut,Celebes Sea,-6188,-1788,-4847.87368168744
+Pengangkut,Ceram Sea,-5635,1331,-1876.24348619667
+Pengangkut,East Arafura Sea,-140,145,-21.1685920054135
+Pengangkut,Flores Sea,-5094,2560,-1429.54809081946
+Pengangkut,Halmahera Sea,-2580,248,-1001.43789190803
+Pengangkut,Java Sea,-625,1568,-31.0025054807391
+Pengangkut,Makassar Strait,-2427,9,-752.126663694835
+Pengangkut,Malucca Basin,-4803,620,-2290.34494089727
+Pengangkut,Maluku North,-8472,1567,-2718.54230172993
+Pengangkut,Natuna Sea,-118,780,-42.2903024272856
+Pengangkut,North Banda Basin,-6356,-50,-4441.78258324662
+Pengangkut,Papua North,-5233,22,-3879.74502176336
+Pengangkut,Savu Sea,-7248,1099,-2931.39361613259
+Pengangkut,Sunda Arc,-7239,3403,-4041.42515008376
+Pengangkut,Sunda Strait,-1913,586,-327.373802903923
+Pengangkut,Timor Sea,-3899,2587,-703.178845205116
+Pengangkut,West Arafura Sea,-6098,1508,-848.845102645286
+Pukat cincin grup pelagis kecil,Ceram Trough,-5250,1,-2615.53544776119
+Pukat cincin grup pelagis kecil,North Band Basin,-6356,-1701,-4594.84089385475
+Pukat cincin grup pelagis kecil,Sumbawa,-6922,-264,-3081.80866879548
+Pukat cincin grup pelagis kecil,Ternate Trough,-3293,48,-2174.94430506774
+Pukat cincin Pelagis Besar degan satu kepal,Ceram Sea,-5635,126,-2081.33013355593
+Pukat cincin Pelagis Besar degan satu kepal,East Java Trench,-7239,3180,-3540.01382488479
+Pukat cincin Pelagis Besar degan satu kepal,East Sumba,-7248,165,-3138.25584492453
+Pukat cincin Pelagis Besar degan satu kepal,Java Trench,-6869,18,-3173.30876873396
+Pukat cincin Pelagis Besar degan satu kepal,Lombok,-4291,-283,-2768.46848635236
+Pukat cincin Pelagis Besar degan satu kepal,Manado,-5961,98,-4286.35578085759
+Pukat cincin Pelagis Besar degan satu kepal,Molucca Sea,-6471,1844,-1860.40802942602
+Pukat cincin Pelagis Besar degan satu kepal,North Papua,-4983,136,-3078.70812947669
+Pukat cincin Pelagis Besar degan satu kepal,Outer Sunda Trench 1,-5722,-3920,-5237.83598122405
+Pukat cincin Pelagis Besar degan satu kepal,Outer Sunda Trench 2,-5730,-3999,-5140.59025787966
+Pukat cincin Pelagis Besar degan satu kepal,Outer Sunda Trench 3,-5594,-4279,-5124.50067685167
+Pukat cincin Pelagis Besar degan satu kepal,Outer Sunda Trench 4,-5878,-2657,-4992.29461320606
+Pukat cincin Pelagis Besar degan satu kepal,Outer Sunda Trench 5,-4980,-3083,-4659.19703597122
+Pukat cincin Pelagis Besar degan satu kepal,Sunda Trench,-6589,3403,-3156.96442813329
+Pukat cincin Pelagis Besar degan satu kepal,Timor Sea,-2555,318,-1178.69048578104
+Pukat cincin Pelagis Besar degan satu kepal,West Sumba,-7248,-2755,-4648.06576897396
+Pukat cincin Pelagis Besar degan satu kepal,West Timor Sea,-4445,5,-2127.93195807065
+Pukat Ikan,Arafura Sea,-3707,145,-200.550509461426
+Pukat Ikan,Batam,-65,811,-14.9638403990025
+Pukat Ikan,Malacca Strait,-107,645,-31.8489888101838
+Pukat Ikan,Natuna Sea,-118,126,-51.4382258064516
+Pukat Udang,Arafura Sea,-49,54,2.92774869109948
+Pukat Udang,Aru Island,-136,38,-25.2438339057134
+Pukat Udang,Kaimana,-408,11,-43.8738170347003
+Pukat Udang,Papua,-451,130,-27.3570324574961
+Pukat Udang,Sunda Trench,-4913,-865,-3028.21990330379
+Purse Seine (Pukat Cincin) Pelagis Kecil,Arufura Sea,-3707,83,-432.142014509731
+Purse Seine (Pukat Cincin) Pelagis Kecil,Balikapapan,-2276,-6,-876.982670089859
+Purse Seine (Pukat Cincin) Pelagis Kecil,Baru Basin,-5635,126,-2271.12083125933
+Purse Seine (Pukat Cincin) Pelagis Kecil,East Timor Sea,-4677,286,-1319.90262822148
+Purse Seine (Pukat Cincin) Pelagis Kecil,Gorontalo 1,-3817,30,-2452.57560355781
+Purse Seine (Pukat Cincin) Pelagis Kecil,Gorontalo 2,-2210,12,-1029.13604436229
+Purse Seine (Pukat Cincin) Pelagis Kecil,Halmahera 1,-2083,1,-979.632595573441
+Purse Seine (Pukat Cincin) Pelagis Kecil,Halmahera 2,-2580,45,-1162.81504008847
+Purse Seine (Pukat Cincin) Pelagis Kecil,Halmahera 3,-1560,-9,-771.764646464646
+Purse Seine (Pukat Cincin) Pelagis Kecil,Indian Ocean 1,-4858,-2469,-3835.25381485249
+Purse Seine (Pukat Cincin) Pelagis Kecil,Indian Ocean 2,-7239,-8,-3826.44998239046
+Purse Seine (Pukat Cincin) Pelagis Kecil,Java Sea,-2012,1568,-92.041994879874
+Purse Seine (Pukat Cincin) Pelagis Kecil,Java Sea 2,-512,17,-78.0605507933613
+Purse Seine (Pukat Cincin) Pelagis Kecil,Java Sea 3,-748,5,-439.256700032289
+Purse Seine (Pukat Cincin) Pelagis Kecil,Java Sea 4,-338,5,-74.7139713971397
+Purse Seine (Pukat Cincin) Pelagis Kecil,Lombok 1,-4334,-372,-2817.22679546409
+Purse Seine (Pukat Cincin) Pelagis Kecil,Lombok 2,-6917,-2703,-4254.44469899453
+Purse Seine (Pukat Cincin) Pelagis Kecil,Malacca Strait,-112,2182,225.569896215669
+Purse Seine (Pukat Cincin) Pelagis Kecil,Maluka,-5921,1059,-2897.00817243845
+Purse Seine (Pukat Cincin) Pelagis Kecil,Manado 1,-4450,-1659,-3118.84205231388
+Purse Seine (Pukat Cincin) Pelagis Kecil,Manado 2,-5961,426,-4087.69446230141
+Purse Seine (Pukat Cincin) Pelagis Kecil,Molucca Sea,-4803,-4,-2513.53556762485
+Purse Seine (Pukat Cincin) Pelagis Kecil,Morotai,-4597,129,-2371.82405188214
+Purse Seine (Pukat Cincin) Pelagis Kecil,Natuna Sea,-137,780,-52.9813227031392
+Purse Seine (Pukat Cincin) Pelagis Kecil,North Banda Bay,-6463,215,-4024.7774069748
+Purse Seine (Pukat Cincin) Pelagis Kecil,North Papua,-5254,19,-3227.37562651349
+Purse Seine (Pukat Cincin) Pelagis Kecil,Sumba,-3147,38,-1716.16708172968
+Purse Seine (Pukat Cincin) Pelagis Kecil,Sumba 2,-6911,-3315,-4751.87627017334
+Purse Seine (Pukat Cincin) Pelagis Kecil,Sumba 3,-6448,-2755,-3958.85944471988
+Purse Seine (Pukat Cincin) Pelagis Kecil,Sumbawa,-4093,-33,-2065.82348716107
+Purse Seine (Pukat Cincin) Pelagis Kecil,Sunda Trench,-6869,3403,-3074.68560159049
+Purse Seine (Pukat Cincin) Pelagis Kecil,Talaud,-6790,464,-2156.31688561359
+Purse Seine (Pukat Cincin) Pelagis Kecil,Ternate Trough,-4109,1567,-1933.56780723755
+Purse Seine (Pukat Cincin) Pelagis Kecil,Timor Sea,-3346,712,-959.138287864534
+Purse Seine (Pukat Cincin) Pelagis Kecil,Tomini,-2042,2,-776.153846153846
+Purse Seine (Pukat Cincin) Pelagis Kecil,West Timor Sea,-6169,-67,-2649.31710933064
+Rawai dasar,Aru Basin,-3386,42,-222.332588573252
+Rawai dasar,Aru Island,-2131,82,-67.1133518305475
+Rawai dasar,Ceram Sea,-1908,101,-330.714343516083
+Rawai dasar,East Timor Sea,-328,-54,-150.009286128845
+Rawai dasar,Jamdena Island,-3542,237,-557.189715079917
+Rawai dasar,Natuna Sea,-101,358,-53.968255356362
+Rawai dasar,Timor Sea,-1048,-1,-122.239227247068
+Rawai dasar,Timor Sea 2,-204,-48,-120.586956521739
+Rawai Tuna,Arafura Sea 1,-67,0,-31.6685979142526
+Rawai Tuna,Arafura Sea 2,-51,15,-16.4566115702479
+Rawai Tuna,Aru Island,-898,9,-69.1113563402889
+Rawai Tuna,Banda Sea,-7356,1233,-3471.64138711489
+Rawai Tuna,Ceram Sea,-2143,-458,-1358.62767295597
+Rawai Tuna,Flores Sea,-5094,2343,-1660.9293162679
+Rawai Tuna,Java Sea,-130,2,-39.0508528111181
+Rawai Tuna,Java Trench,-7248,3180,-4119.25711332566
+Rawai Tuna,Katiet,-3493,-10,-1588.63240628779
+Rawai Tuna,Mentawai Basin,-1873,49,-1309.37660223805
+Rawai Tuna,North Papua,-5292,-1555,-4199.54688358335
+Rawai Tuna,Sunda Strait,-1913,231,-437.221894581644
+Rawai Tuna,Sunda Trench,-6869,3403,-4226.64107102858
+Rawai Tuna,Timor Sea,-3574,2587,-882.779225421336
