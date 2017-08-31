@@ -2,7 +2,7 @@
 
 This repository contains a system that attempts to characterize VMS (Vessel Monitoring System) tracks, and match the record with VBD (VIIRS Boat Detection) data.
 
-##Methodology
+## Methodology
 
 The VMS tracks came in with following fields:
 
