@@ -214,6 +214,107 @@ def get_begin_date(trans_no,vessel_name=None,
         inidt_idx = hdr.index('START_DATE')
         return rec[0][inidt_idx]
 
+def get_ais_vessel_list():
+    '''
+    This module returns list of boats with specified requirements
+    '''
+    from google.cloud import bigquery as bq
+    client=bq.Client()
+    query=client.run_sync_query('''
+    SELECT
+      mmsi
+    FROM (
+      SELECT
+        mmsi,count(*) count
+      FROM
+        `skytruth-vms.GFW_AIS.AIS_20170603`
+      GROUP BY
+        mmsi
+      ORDER BY
+        count DESC
+    ) WHERE 
+    count>=400
+    ''')
+    query.use_legacy_sql = False
+    query.run()
+    vessel_list=[row[0] for row in query.rows]
+    return vessel_list
+                                
+    
+def get_ais_track(trans_no,start_date=None,end_date=None):
+    '''
+    This module serves as a hack to retrieve AIS track from Google BQ.
+    '''
+    from google.cloud import bigquery as bq
+    client=bq.Client()
+    if start_date is not None:
+        stdt=start_date[2:8]
+        if end_date is None:
+            print 'Start date and end date must both be set.'
+            sys.exit(1)
+    if end_date is not None:
+        eddt=end_date[2:8]
+        if start_date is None:
+            print 'Start date and end date must both be set.'
+            sys.exit(1)
+    if start_date is None and end_date is None:
+        stdt='170101'
+        eddt='170110'
+    cmd='''
+    SELECT DISTINCT
+      *
+    FROM
+      `skytruth-vms.GFW_AIS.20*`
+    WHERE 
+      _table_suffix BETWEEN \''''+stdt+'''\' AND \''''+eddt+'''\'
+      AND mmsi='''+str(trans_no)+'''
+      AND lat IS NOT null
+    ORDER BY
+      timestamp
+    '''
+    print cmd
+    query=client.run_sync_query(cmd)
+    query.use_legacy_sql = False
+    start_time=dt.datetime.now()
+    
+    query.run()
+
+    end_time=dt.datetime.now()
+    elapsed_time=end_time-start_time
+    print 'Used %s seconds' % elapsed_time.seconds
+    print 'Returned %s rows' % len(query.rows)
+    
+    header=['transmitter_no','latitude','longitude','reportdate','seg_id']
+    header=[i.upper() for i in header]
+
+    if query.complete:
+        track=[row for row in query.rows]
+        return track,header
+    else:
+        print 'query.complete',query.complete
+        print query.errors
+        print cmd.replace('\n',' ').replace('\t','')
+        print 'Query failed. Wait 60 seconds and try again'
+        for i in range(0,6):
+            print (i+1)*10
+            time.sleep(10)
+#        time.sleep(60)
+#        raw_input()
+        query=client.run_sync_query(cmd)
+        query.use_legacy_sql=False
+        query.run()
+        if query.complete:
+            track=[row for row in query.rows]
+        else:
+            print 'query.complete',query.complete
+            print query.errors
+            print cmd.replace('\n',' ').replace('\t','')
+            print 'Query failed.'
+            track=[]
+        return track,header
+    
+
+    
 def get_vms_track(trans_no,vessel_name=None,gear_type=None,
                   tonnage=None,width=None,length=None,
                   start_date='20140101',end_date='20161231'
@@ -743,7 +844,8 @@ def time2loc(reportdate,lon):
     Convertes Skytruth VMS report date to local time using longitude
     '''
     tz=find_tz_ez(lon)
-    rpt_dt=conv_vms_date_to_dt(reportdate,delta=tz/24.)
+    reportdate=reportdate[0:19]
+    rpt_dt=conv_psql_date_to_dt(reportdate,delta=tz/24.)
     return rpt_dt
 
 def dt2julian(dtobj):
@@ -754,12 +856,19 @@ def julian2dt(julday):
 
 def VMS_Time2Julian(reportdate,format='%Y%m%d%H%M%S'):
     tFormat=format#"%d-%b-%Y %H:%M:%S"
-    reportdate=str(reportdate)
+    
+#    reportdate=str(reportdate)
     try: #see if it is a list
         for i in repodatdate:
-            a=time.strptime(i,tFormat)
-            aJul=(jday(a.tm_year, a.tm_mon, a.tm_mday,
-                           a.tm_hour, a.tm_min, a.tm_sec))
+            if type(i)==dt.datetime:
+                a=i
+            else:
+#                a=time.strptime(i,tFormat)
+                a=dt.datetime.strptime(i,tFormat)
+            aJul=(jday(a.year,a.mon,a.month,a.day,
+                       a.hour,a.minute,a.second))
+#            aJul=(jday(a.tm_year, a.tm_mon, a.tm_mday,
+#                           a.tm_hour, a.tm_min, a.tm_sec))
             
             try:
                 out.append(aJul)
@@ -767,9 +876,15 @@ def VMS_Time2Julian(reportdate,format='%Y%m%d%H%M%S'):
                 out=[aJul]
         return out
     except: #a single shot
-        a=time.strptime(reportdate,tFormat)
-        return jday(a.tm_year, a.tm_mon, a.tm_mday,
-                    a.tm_hour, a.tm_min, a.tm_sec)
+        if type(reportdate)==dt.datetime:
+            a=reportdate
+        else:
+            a=time.strptime(reportdate,tFormat)
+            a=dt.datetime.strptime(reportdate,tFormat)
+        return jday(a.year,a.month,a.day,
+                    a.hour,a.minute,a.second)
+#        return jday(a.tm_year, a.tm_mon, a.tm_mday,
+#                    a.tm_hour, a.tm_min, a.tm_sec)
 
     
 def VMS_Julian2Time(inJul,format='%Y%m%d%H%M%S'):

@@ -74,13 +74,13 @@ cur=conn.cursor()
 #conn.commit()
 
 mmsi_idx=mmsi_list.index(mmsi_list[0])
-mmsi_idx=mmsi_list.index(372805000)
+mmsi_idx=mmsi_list.index(231014000)
 for mmsi in mmsi_list[mmsi_idx:-1]:
     #now query for each boat
     trk,hdr=vms_tools.get_ais_track(mmsi,start_date='20170101',end_date='20170110')
     if len(trk)==0:
         print mmsi
-        raw_input()
+#        raw_input()
         continue
     
     vp=vms_predict.vms_predict()
